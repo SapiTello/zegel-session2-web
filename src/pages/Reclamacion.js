@@ -62,6 +62,19 @@ function Reclamacion() {
           </div>
         </div>
         <div className='form'>
+          <label className='form_label'>
+            Direccion:
+          </label>
+          <div className='form_input-ico'>
+            <i className='fa fa-user form_ico' aria-hidden="true">
+              <input className='form_input'
+              id="direccion"
+              name='direccion'>
+              </input>
+            </i>
+          </div>
+        </div>
+        <div className='form'>
             <button>Enviar</button>          
         </div>
       </div>
