@@ -1,23 +1,17 @@
 import '../App.css';
-
-function Nav() {
+import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+function NavBarComponent() {
   return (
-    <div className='form_container_contact'>    
-      <div className='form_header'>
-        <h1 className='form_title'>
-          Acerca de
-        </h1>
-      </div>
-      <div className='form_body'>
-        <div className='form'>
-          <label className='form_label'>
-          Simplificar y disfrutar más la vida es el proposito con el que trabajamos para quienes nos eligen todos los días. Esta visión
-          comun esta en el centro de nuestra conversaciones y guia nuestros poryectos de transformacion cultura y digital.
-          </label>          
-        </div>        
-      </div>
-    </div>    
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="home">Inicio</Navbar.Brand>
+        <Navbar.Brand href="contact">Contacto</Navbar.Brand>
+        <Navbar.Brand href="about">Acerca de</Navbar.Brand>
+        <Navbar.Brand href="reclamacion">Libro de Reclamaciones</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />        
+      </Container>
+    </Navbar>
   );
 }
 
-export default Nav;
+export default NavBarComponent;
